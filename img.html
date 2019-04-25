@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>不将就</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<style type="text/css">     
+			.mask {       
+				position: absolute; top: 0px; filter: alpha(opacity=60); background-color: #777;     
+				z-index: 1002; left: 0px;     
+				opacity:0.5; -moz-opacity:0.5;     
+			}     
+		</style>  
+		<pre class="html" name="code"><script type="text/javascript"> 
+			//任意处点击事件
+			document.onclick=function(){ 
+				if(confirm("是否显示遮罩？")){
+					showMask();
+				}else{
+					hideMask();
+				}
+			}    
+			//兼容火狐、IE8   
+			//显示遮罩层    
+			function showMask(){     
+				$("#mask").css("height",$(document).height());     
+				$("#mask").css("width",$(document).width());     
+				$("#mask").show();  
+			}  
+			//隐藏遮罩层  
+			function hideMask(){     
+				$("#mask").hide();     
+			}  
+		</script>
+	</head>
+	<body>
+		<div id="mask" class="mask"></div>    
+	</body>
+</html>
