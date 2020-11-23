@@ -1,4 +1,4 @@
 # 不将就
 # This is my web
 
-[163shop](https://zhang-bjj.github.io/bjj/dist)
+[网易严选项目演示](https://zhang-bjj.github.io/bjj/dist)
